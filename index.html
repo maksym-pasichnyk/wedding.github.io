@@ -33,16 +33,16 @@
     .header {
       display: flex;
       position: relative;
-      width: 131%;
-      left: 2%;
-      margin-top: -26%;
+      width: 120%;
+      margin-top: -20%;
+      margin-bottom: -20%;
     }
     .footer {
       display: flex;
       position: relative;
-      width: 131%;
-      left: 2%;
-      margin-bottom: -26%;
+      /* width: 120%; */
+      margin-top: -20%;
+      margin-bottom: -20%;
       transform: scaleY(-1);
     }
     .middle-left-flowers {
@@ -55,10 +55,26 @@
     .calendar {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      row-gap: 15px;
+      /* row-gap: 15px; */
+      border: 1px solid black;
+      padding: 15px;
+      width: 400px;
+      background-color: #f6d8dc;
+      border-radius: 15px;
+    }
+    .calendar-week {
+      grid-column-start: auto;
+      font-size: 32px;
+      color: #a62137;
     }
     .calendar-date {
       grid-column-start: auto;
+      font-size: 40px;
+    }
+    .calendar-fade {
+      grid-column-start: auto;
+      font-size: 40px;
+      color: #7c7171;
     }
     .palette {
       display: grid;
@@ -73,68 +89,71 @@
       width: 75%;
       margin: 5%;
     }
+    .title-text {
+      font-family: LianaRegular;
+      font-size: 76px;
+      color: #c83d54;
+    }
+    .content-text {
+      /* font-family: LianaRegular; */
+      font-family: Cormorant;
+      font-size: 40px;
+    }
   </style>
   <body>
-    <img class="header" src="files/15.png">
+    <img class="header" src="files/header-2.png">
     <div style="display: flex; flex-direction: column; align-items: center;">
       <p style="font-family: LianaRegular; font-size: 192px;">Марина<br>та<br>Олександр</p>
-      <div style="display: flex; flex-direction: row; justify-content: center;">
-        <img src="files/5.png" class="middle-left-flowers">
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
-          <div style="font-family: Cormorant; font-size: 24px;">В день створення нашої сім'ї, ми<br>запрошуємо Вас розділити з нами радість<br>цього особливого дня в нашому житті.<br>Будемо раді бачити Вас на нашому весіллі,<br>щоб разом створити незабутні спогади.</div>
-          <div style="font-size: 36px; color: #c83d54;">21 липня 2024 року</div>
-          <div style="display: flex; border: 1px solid black; padding: 10px; flex-direction: column;">
-            <div class="calendar">
-              <div class="calendar-date">ПН</div>
-              <div class="calendar-date">ВТ</div>
-              <div class="calendar-date">СР</div>
-              <div class="calendar-date">ЧТ</div>
-              <div class="calendar-date">ПТ</div>
-              <div class="calendar-date">СБ</div>
-              <div class="calendar-date">НД</div>
-              <div class="calendar-date">1</div>
-              <div class="calendar-date">2</div>
-              <div class="calendar-date">3</div>
-              <div class="calendar-date">4</div>
-              <div class="calendar-date">5</div>
-              <div class="calendar-date">6</div>
-              <div class="calendar-date">7</div>
-              <div class="calendar-date">8</div>
-              <div class="calendar-date">9</div>
-              <div class="calendar-date">10</div>
-              <div class="calendar-date">11</div>
-              <div class="calendar-date">12</div>
-              <div class="calendar-date">13</div>
-              <div class="calendar-date">14</div>
-              <div class="calendar-date">15</div>
-              <div class="calendar-date">16</div>
-              <div class="calendar-date">17</div>
-              <div class="calendar-date">18</div>
-              <div class="calendar-date">19</div>
-              <div class="calendar-date">20</div>
-              <div class="calendar-date">21</div>
-              <div class="calendar-date">22</div>
-              <div class="calendar-date">23</div>
-              <div class="calendar-date">24</div>
-              <div class="calendar-date">25</div>
-              <div class="calendar-date">26</div>
-              <div class="calendar-date">27</div>
-              <div class="calendar-date">28</div>
-              <div class="calendar-date">29</div>
-              <div class="calendar-date">30</div>
-              <div class="calendar-date">31</div>
-              <div class="calendar-date">1</div>
-              <div class="calendar-date">2</div>
-              <div class="calendar-date">3</div>
-              <div class="calendar-date">4</div>
-            </div>
-          </div>
-        </div>
-        <img src="files/5.png" class="middle-right-flowers">
+      <img class="separator" src="files/8.png">
+      <div class="title-text">21 липня 2024 року</div>
+      <p class="content-text">В день створення нашої сім'ї, ми<br>запрошуємо Вас розділити з нами радість<br>цього особливого дня в нашому житті.<br>Будемо раді бачити Вас на нашому весіллі,<br>щоб разом створити незабутні спогади.</p>
+      <div class="calendar">
+        <div class="calendar-week">ПН</div>
+        <div class="calendar-week">ВТ</div>
+        <div class="calendar-week">СР</div>
+        <div class="calendar-week">ЧТ</div>
+        <div class="calendar-week">ПТ</div>
+        <div class="calendar-week">СБ</div>
+        <div class="calendar-week">НД</div>
+        <div class="calendar-date">1</div>
+        <div class="calendar-date">2</div>
+        <div class="calendar-date">3</div>
+        <div class="calendar-date">4</div>
+        <div class="calendar-date">5</div>
+        <div class="calendar-date">6</div>
+        <div class="calendar-date">7</div>
+        <div class="calendar-date">8</div>
+        <div class="calendar-date">9</div>
+        <div class="calendar-date">10</div>
+        <div class="calendar-date">11</div>
+        <div class="calendar-date">12</div>
+        <div class="calendar-date">13</div>
+        <div class="calendar-date">14</div>
+        <div class="calendar-date">15</div>
+        <div class="calendar-date">16</div>
+        <div class="calendar-date">17</div>
+        <div class="calendar-date">18</div>
+        <div class="calendar-date">19</div>
+        <div class="calendar-date">20</div>
+        <div class="calendar-date">21</div>
+        <div class="calendar-date">22</div>
+        <div class="calendar-date">23</div>
+        <div class="calendar-date">24</div>
+        <div class="calendar-date">25</div>
+        <div class="calendar-date">26</div>
+        <div class="calendar-date">27</div>
+        <div class="calendar-date">28</div>
+        <div class="calendar-date">29</div>
+        <div class="calendar-date">30</div>
+        <div class="calendar-date">31</div>
+        <div class="calendar-fade">1</div>
+        <div class="calendar-fade">2</div>
+        <div class="calendar-fade">3</div>
+        <div class="calendar-fade">4</div>
       </div>
       <img class="separator" src="files/8.png">
-      <div style="font-size: 36px; color: #c83d54;">Місце проведення</div>
-      <p style="font-size: 24px;">Готельно-оздоровчий комплекс “Green Zone”</p>
+      <div class="title-text">Мiсце проведення</div>
+      <p class="content-text">Готельно-оздоровчий комплекс “Green Zone”</p>
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13147.931744808679!2d25.803730612240795!3d51.36506065364586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47261372191117ff%3A0xde43c8f4eba7c24b!2z0JPQvtGC0LXQu9GM0L3Qvi3QvtC30LTQvtGA0L7QstGH0LjQuSDQutC-0LzQv9C70LXQutGBICJHcmVlbiBab25lIg!5e0!3m2!1suk!2sua!4v1715858406225!5m2!1suk!2sua"
         width=600
@@ -145,24 +164,29 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
       <img class="separator" src="files/8.png">
-      <div style="font-size: 36px; color: #c83d54;">План заходу *переробити</div>
+      <div style="font-size: 64px; color: #c83d54;">План заходу *переробити</div>
       <div>Вінчання відбудеться о 12:00</div>
       <div>Свято-Софіївський храм</div>
       <div>Святкування розпочнеться о 15:00</div>
       <div>ресторан “Green Zone”</div>
       <div>м.Вараш, м-н Перемоги 50</div>
       <img class="separator" src="files/8.png">
-      <div style="font-size: 36px; color: #c83d54;">Дрес-код</div>
-      <p>Для нас важливіша ваша присутність, але нам буде дуже приємно,<br>якщо ви підтримаєте кольорову палітру нашого весілля</p>
-      
-      <div class="palette">
-        <img class="palette-color" src="files/9.png" alt="">
-        <img class="palette-color" src="files/10.png" alt="">
-        <img class="palette-color" src="files/11.png" alt="">
-        <img class="palette-color" src="files/12.png" alt="">
-        <img class="palette-color" src="files/13.png" alt="">
-        <img class="palette-color" src="files/14.png" alt="">
-      </div>
+      <div class="title-text">Дрес-код</div>
+      <!-- <div style="display: flex; flex-direction: row; justify-content: center;"> -->
+        <!-- <img src="files/5.png" class="middle-left-flowers"> -->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+          <p class="content-text"">Для нас важливіша ваша присутність,<br>але нам буде дуже приємно, якщо ви<br>підтримаєте кольорову палітру нашого весілля</p>
+          <div class="palette">
+            <img class="palette-color" src="files/9.png" alt="">
+            <img class="palette-color" src="files/10.png" alt="">
+            <img class="palette-color" src="files/11.png" alt="">
+            <img class="palette-color" src="files/12.png" alt="">
+            <img class="palette-color" src="files/13.png" alt="">
+            <img class="palette-color" src="files/14.png" alt="">
+          </div>
+        </div>
+        <!-- <img src="files/5.png" class="middle-right-flowers"> -->
+      <!-- </div> -->
       <img class="separator" src="files/8.png">
       <div style="font-size: 36px; color: #c83d54;">Анкета *добавити</div>
       <img class="separator" src="files/8.png">
@@ -170,6 +194,6 @@
       <img src="files/infinity.png" style="height: 49.6px; width: 431.3px;">
       <p>"Води великі не зможуть згасити кохання, ані ріки його не заллють..." (Пісн.8:7)</p>
     </div>
-    <img class="footer" src="files/15.png">
+    <img class="footer" src="files/header-2.png">
   </body>
 </html>
