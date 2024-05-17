@@ -4,11 +4,15 @@
   <style>
     @font-face {
       font-family: 'Cormorant';
-      src: url(fonts/cormorantsc/Cormorant-Regular.otf) format('truetype');
+      src: url("fonts/cormorantsc/Cormorant-Regular.otf") format('truetype');
     }
     @font-face {
       font-family: 'LeJourScript';
       src: url("fonts/Le Jour Script.ttf") format('truetype');
+    }
+    @font-face {
+      font-family: 'LianaRegular';
+      src: url("fonts/Liana Regular.ttf") format('truetype');
     }
     html {
       margin: 0;
@@ -20,6 +24,7 @@
       background-size: 50%;
       overflow: hidden;
       overflow-y: scroll;
+      font-family: Cormorant;
     }
     .top-header {
       height: 500px;
@@ -55,6 +60,15 @@
     .calendar-date {
       grid-column-start: auto;
     }
+    .palette {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .palette-color {
+      grid-column-start: auto;
+      height: 120px;
+      row-gap: 0px;
+    }
   </style>
   <body>
     <div class="top-header">
@@ -62,17 +76,13 @@
       <img src="files/Flowers.png" class="top-flowers-right">
     </div>
     <div style="display: flex; flex-direction: column; align-items: center;">
-      <div style="font-family: LeJourScript; font-size: 62px">Maryna<br>and<br>Oleksander</div>
+      <p style="font-family: LianaRegular; font-size: 192px;">Марина<br>та<br>Олександр</p>
       <div style="display: flex; flex-direction: row; justify-content: center;">
         <img src="files/5.png" class="middle-left-flowers">
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
           <div style="font-family: Cormorant; font-size: 24px;">В день створення нашої сім'ї, ми<br>запрошуємо Вас розділити з нами радість<br>цього особливого дня в нашому житті.<br>Будемо раді бачити Вас на нашому весіллі,<br>щоб разом створити незабутні спогади.</div>
-          <div style="font-size: 36px;">21 липня 2024 року</div>
-          <div style="display: flex; border: 1px solid black; width: 350px; padding: 10px; flex-direction: column;">
-            <div style="display: flex; margin: 10px; justify-content: space-between;">
-              <div style="font-size: 32px;">Липень</div>
-              <div style="font-size: 32px;">2024</div>
-            </div>
+          <div style="font-size: 36px; color: #c83d54;">21 липня 2024 року</div>
+          <div style="display: flex; border: 1px solid black; width: 75%; padding: 10px; flex-direction: column;">
             <div class="calendar">
               <div class="calendar-date">ПН</div>
               <div class="calendar-date">ВТ</div>
@@ -121,21 +131,50 @@
         </div>
         <img src="files/5.png" class="middle-right-flowers">
       </div>
-      <p style="font-size: 36px;">Місце проведення</p>
-      <div style="font-size: 24px;">Ресторан “Green Zone”</div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13147.931744808679!2d25.803730612240795!3d51.36506065364586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47261372191117ff%3A0xde43c8f4eba7c24b!2z0JPQvtGC0LXQu9GM0L3Qvi3QvtC30LTQvtGA0L7QstGH0LjQuSDQutC-0LzQv9C70LXQutGBICJHcmVlbiBab25lIg!5e0!3m2!1suk!2sua!4v1715858406225!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p style="font-size: 36px;">План заходу</p>
+      <p></p>
+      <img src="files/8.png">
+      <p></p>
+      <div style="font-size: 36px; color: #c83d54;">Місце проведення</div>
+      <p style="font-size: 24px;">Готельно-оздоровчий комплекс “Green Zone”</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13147.931744808679!2d25.803730612240795!3d51.36506065364586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47261372191117ff%3A0xde43c8f4eba7c24b!2z0JPQvtGC0LXQu9GM0L3Qvi3QvtC30LTQvtGA0L7QstGH0LjQuSDQutC-0LzQv9C70LXQutGBICJHcmVlbiBab25lIg!5e0!3m2!1suk!2sua!4v1715858406225!5m2!1suk!2sua"
+        width=600
+        height=450
+        style="border:1;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p></p>
+      <img src="files/8.png">
+      <p></p>
+      <div style="font-size: 36px; color: #c83d54;">План заходу</div>
       <div>Вінчання відбудеться о 12:00</div>
       <div>Свято-Софіївський храм</div>
       <div>Святкування розпочнеться о 15:00</div>
       <div>ресторан “Green Zone”</div>
       <div>м.Вараш, м-н Перемоги 50</div>
-
-      <p style="font-size: 36px;">Дрес-код</p>
-      <p>Нам важливіша ваша присутність, але нам буде дуже приємно, якщо ви підтримаєте кольорову палітру нашого весілля</p>
-
-      <p style="font-size: 36px;">Анкета</p>
-
+      <p></p>
+      <img src="files/8.png">
+      <p></p>
+      <div style="font-size: 36px; color: #c83d54;">Дрес-код</div>
+      <p>Для нас важливіша ваша присутність, але нам буде дуже приємно,<br>якщо ви підтримаєте кольорову палітру нашого весілля</p>
+      
+      <div class="palette">
+        <img class="palette-color" src="files/9.png" alt="">
+        <img class="palette-color" src="files/10.png" alt="">
+        <img class="palette-color" src="files/11.png" alt="">
+        <img class="palette-color" src="files/12.png" alt="">
+        <img class="palette-color" src="files/13.png" alt="">
+        <img class="palette-color" src="files/14.png" alt="">
+      </div>
+      <p></p>
+      <img src="files/8.png">
+      <p></p>
+      <div style="font-size: 36px; color: #c83d54;">Анкета</div>
+      <p></p>
+      <img src="files/8.png">
+      <p></p>
       <p style="font-size: 36px;">До зустрічі!</p>
       <img src="files/infinity.png" style="height: 49.6px; width: 431.3px;">
       <p>"Води великі не зможуть згасити кохання, ані ріки його не заллють..." (Пісн.8:7)</p>
