@@ -26,25 +26,27 @@
       background-size: 50%;
       overflow: hidden;
       font-family: Cormorant;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
-    .top-header {
-      height: 500px;
+    .header {
+      display: flex;
       position: relative;
-      overflow: hidden;
+      width: 131%;
+      top: -22vh;
+      left: 2vw;
+      margin-bottom: -22vh;
     }
-    .top-flowers-left {
-      height: 100%;
-      transform: rotate(132.1deg);
-      position: absolute;
-      top: -125px;
-      left: -68px;
-    }
-    .top-flowers-right {
-      height: 100%;
-      transform: rotate(-150.7deg);
-      position: absolute;
-      top: -60px;
-      right: -120px;
+    .footer {
+      display: flex;
+      position: relative;
+      width: 131%;
+      top: 22vh;
+      left: 2vw;
+      margin-top: -22vh;
+      left: 2vw;
+      transform: scaleY(-1);
     }
     .middle-left-flowers {
       height: 550px;
@@ -76,10 +78,7 @@
     }
   </style>
   <body>
-    <div class="top-header">
-      <img src="files/Flowers.png" class="top-flowers-left">
-      <img src="files/Flowers.png" class="top-flowers-right">
-    </div>
+    <img class="header" src="files/15.png">
     <div style="display: flex; flex-direction: column; align-items: center;">
       <p style="font-family: LianaRegular; font-size: 192px;">Марина<br>та<br>Олександр</p>
       <div style="display: flex; flex-direction: row; justify-content: center;">
@@ -149,7 +148,7 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
       <img class="separator" src="files/8.png">
-      <div style="font-size: 36px; color: #c83d54;">План заходу</div>
+      <div style="font-size: 36px; color: #c83d54;">План заходу *переробити</div>
       <div>Вінчання відбудеться о 12:00</div>
       <div>Свято-Софіївський храм</div>
       <div>Святкування розпочнеться о 15:00</div>
@@ -168,11 +167,12 @@
         <img class="palette-color" src="files/14.png" alt="">
       </div>
       <img class="separator" src="files/8.png">
-      <div style="font-size: 36px; color: #c83d54;">Анкета</div>
+      <div style="font-size: 36px; color: #c83d54;">Анкета *добавити</div>
       <img class="separator" src="files/8.png">
       <p style="font-size: 36px;">До зустрічі!</p>
       <img src="files/infinity.png" style="height: 49.6px; width: 431.3px;">
       <p>"Води великі не зможуть згасити кохання, ані ріки його не заллють..." (Пісн.8:7)</p>
     </div>
+    <img class="footer" src="files/15.png">
   </body>
 </html>
