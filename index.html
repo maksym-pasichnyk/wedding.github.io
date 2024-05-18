@@ -44,21 +44,6 @@
       transform: scaleY(-1);
       background-image: url();
     }
-    .frame-left {
-      display: flex;
-      position: absolute;
-      width: 20%;
-      left: -7%;
-      z-index: -1;
-    }
-    .frame-right {
-      display: flex;
-      position: absolute;
-      width: 20%;
-      right: -7%;
-      z-index: -1;
-      transform: scaleX(-1);
-    }
     .calendar {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
@@ -92,7 +77,7 @@
       row-gap: 0px;
     }
     .separator {
-      width: 80%;
+      width: 100%;
       margin: 5%;
     }
     .title-text {
@@ -131,7 +116,7 @@
     </script>
   <body>
     <img class="frame-top" src="files/header-2.png">
-    <div style="display: flex; flex-direction: column; align-items: center;">
+    <div style="display: flex; flex-direction: column; align-items: center; width: 80%;">
       <p style="font-family: LianaRegular; font-size: 174px;">Марина<br>та<br>Олександр</p>
       <div class="title-text">До весiлля залишилося:</div>
       <p class="content-text" id="timer">Jule 21, 2024 11:30:00</p>
@@ -196,7 +181,7 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
       <img class="separator" src="files/8.png">
-      <div style="font-size: 64px; color: #c83d54;">План заходу *переробити</div>
+      <div class="title-text">План заходу</div>
       <div>Вінчання відбудеться о 12:00</div>
       <div>Свято-Софіївський храм</div>
       <div>Святкування розпочнеться о 15:00</div>
@@ -205,7 +190,7 @@
       <img class="separator" src="files/8.png">
       <div class="title-text">Дрес-код</div>
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
-        <p class="content-text">Для нас важливіша ваша присутність,<br>але нам буде дуже приємно, якщо ви<br>підтримаєте кольорову палітру нашого весілля</p>
+        <p class="content-text">Для нас важливіша Ваша присутність,<br>але нам буде дуже приємно, якщо Ви<br>підтримаєте кольорову палітру нашого весілля.</p>
         <div class="palette">
           <img class="palette-color" src="files/9.png" alt="">
           <img class="palette-color" src="files/10.png" alt="">
@@ -217,10 +202,10 @@
       </div>
       <img class="separator" src="files/8.png">
       <div class="title-text">Деталi</div>
-      <p class="content-text">Щоб продовжити красу цього свята,<br>ми були б вдячні за квіти в горщиках,<br>які надовго нагадуватимуть нам<br>про ваше тепле привітання.</p>
+      <p class="content-text">Щоб продовжити красу цього свята,<br>ми будемо вдячні за квіти в горщиках,<br>які надовго нагадуватимуть нам<br>про Ваше тепле привітання.</p>
       <img class="separator" src="files/8.png">
       <div class="title-text">Анкета</div>
-      <p class="content-text">Просимо вас заповнити анкету до 21 червня 2024 р.</p>
+      <p class="content-text">Просимо Вас заповнити анкету<br>до 21 червня 2024 р.</p>
       <div style="display: flex; flex-direction: column; text-align: left;">
         <div class="content-text">Ваше ім'я та прізвище</div>
         <input type="text" class="content-text" style="padding: 10px; margin: 5% 0; border: 1px solid black;">
