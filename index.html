@@ -206,20 +206,22 @@
       <img class="separator" src="files/8.png">
       <div class="title-text">Анкета</div>
       <p class="content-text">Просимо Вас заповнити анкету<br>до 21 червня 2024 р.</p>
-      <div style="display: flex; flex-direction: column; text-align: left;">
-        <div class="content-text">Ваше ім'я та прізвище</div>
-        <input type="text" class="content-text" style="padding: 10px; margin: 5% 0; border: 1px solid black;">
-        <div class="content-text" style="margin-bottom: 5%;">Плануєте відвідати весілля?</div>
-        <div style="display: flex; align-items: center">
-          <input type="radio" id="choise.yes" style="transform: scale(1.5); margin-right: 15px;" name="choise" value="yes" checked/>
-          <label for="choise.yes" class="content-text">Так, з радістю!</label>
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMz5ktDbDwJlfsc8mBnPzyuo-zjRKSKfE9861AGFWxotC04w/formResponse" method="post">
+        <div style="display: flex; flex-direction: column; text-align: left;">
+          <div class="content-text" placeholder="Ваше ім'я та прізвище">Ваше ім'я та прізвище</div>
+          <input type="text" class="content-text" required name="entry.1436827771" style="padding: 10px; margin: 5% 0; border: 1px solid black;">
+          <div class="content-text" style="margin-bottom: 5%;">Плануєте відвідати весілля?</div>
+          <div style="display: flex; align-items: center">
+            <input type="radio" id="choise.yes" style="transform: scale(1.5); margin-right: 15px;" name="entry.1495708168" value="Так" placeholder="Плануєте відвідати весілля?" checked/>
+            <label for="choise.yes" class="content-text">Так, з радістю!</label>
+          </div>
+          <div style="display: flex; align-items: center">
+            <input type="radio" id="choise.no" style="transform: scale(1.5); margin-right: 15px;" name="entry.1495708168" value="Ні" placeholder="Плануєте відвідати весілля?" />
+            <label for="choise.no" class="content-text">На жаль, я не зможу</label>
+          </div>
+          <button type="submit" class="content-text" style="margin: 5%; padding: 10px 20px; width: fit-content; align-self: center;">Відправити</button>
         </div>
-        <div style="display: flex; align-items: center">
-          <input type="radio" id="choise.no" style="transform: scale(1.5); margin-right: 15px;" name="choise" value="no" />
-          <label for="choise.no" class="content-text">На жаль, я не зможу</label>
-        </div>
-        <button type="button" class="content-text" style="margin: 20px; padding: 10px 20px; width: fit-content; align-self: center;">Відправити</button>
-      </div>
+      </form>
       <img class="separator" src="files/8.png">
       <div class="title-text">До зустрiчi!</div>
       <p class="content-text">"Води великі не зможуть згасити кохання, ані ріки його не заллють..." (Пісн.8:7)</p>
