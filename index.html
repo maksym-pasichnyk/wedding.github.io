@@ -107,13 +107,34 @@
     }
     .rings {
       width: 50%;
+      margin-top: 10%;
       margin-bottom: 10%;
     }
   </style>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jule 21, 2024 11:30:00").getTime();
+    
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("timer").innerHTML = days + " днів " + hours + " годин " + minutes + " хвилин " + seconds + " секунд ";
+      // if (distance < 0) {
+        // clearInterval(x);
+        // document.getElementById("timer").innerHTML = "EXPIRED";
+      // }
+    }, 1000);
+    </script>
   <body>
     <img class="frame-top" src="files/header-2.png">
     <div style="display: flex; flex-direction: column; align-items: center;">
       <p style="font-family: LianaRegular; font-size: 174px;">Марина<br>та<br>Олександр</p>
+      <div class="title-text">До весiлля залишилося:</div>
+      <p class="content-text" id="timer">Jule 21, 2024 11:30:00</p>
       <img class="rings" src="files/4.png">
       <img class="separator" src="files/8.png">
       <div class="title-text">21 липня 2024 року</div>
