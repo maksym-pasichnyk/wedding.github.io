@@ -88,11 +88,11 @@
     }
     .palette-color {
       grid-column-start: auto;
-      height: 120px;
+      height: 200px;
       row-gap: 0px;
     }
     .separator {
-      width: 75%;
+      width: 80%;
       margin: 5%;
     }
     .title-text {
@@ -205,7 +205,7 @@
       <img class="separator" src="files/8.png">
       <div class="title-text">Дрес-код</div>
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
-        <p class="content-text"">Для нас важливіша ваша присутність,<br>але нам буде дуже приємно, якщо ви<br>підтримаєте кольорову палітру нашого весілля</p>
+        <p class="content-text">Для нас важливіша ваша присутність,<br>але нам буде дуже приємно, якщо ви<br>підтримаєте кольорову палітру нашого весілля</p>
         <div class="palette">
           <img class="palette-color" src="files/9.png" alt="">
           <img class="palette-color" src="files/10.png" alt="">
@@ -216,7 +216,25 @@
         </div>
       </div>
       <img class="separator" src="files/8.png">
-      <div style="font-size: 36px; color: #c83d54;">Анкета *добавити</div>
+      <div class="title-text">Деталi</div>
+      <p class="content-text">Щоб продовжити красу цього свята,<br>ми були б вдячні за квіти в горщиках,<br>які надовго нагадуватимуть нам<br>про ваше тепле привітання.</p>
+      <img class="separator" src="files/8.png">
+      <div class="title-text">Анкета</div>
+      <p class="content-text">Просимо вас заповнити анкету до 21 червня 2024 р.</p>
+      <div style="display: flex; flex-direction: column; text-align: left;">
+        <div class="content-text">Ваше ім'я та прізвище</div>
+        <input type="text" class="content-text" style="padding: 10px; margin: 5% 0; border: 1px solid black;">
+        <div class="content-text" style="margin-bottom: 5%;">Плануєте відвідати весілля?</div>
+        <div style="display: flex; align-items: center">
+          <input type="radio" id="choise.yes" style="transform: scale(1.5); margin-right: 15px;" name="choise" value="yes" checked/>
+          <label for="choise.yes" class="content-text">Так, з радістю!</label>
+        </div>
+        <div style="display: flex; align-items: center">
+          <input type="radio" id="choise.no" style="transform: scale(1.5); margin-right: 15px;" name="choise" value="no" />
+          <label for="choise.no" class="content-text">На жаль, я не зможу</label>
+        </div>
+        <button type="button" class="content-text" style="margin: 20px; padding: 10px 20px; width: fit-content; align-self: center;">Відправити</button>
+      </div>
       <img class="separator" src="files/8.png">
       <div class="title-text">До зустрiчi!</div>
       <p class="content-text">"Води великі не зможуть згасити кохання, ані ріки його не заллють..." (Пісн.8:7)</p>
