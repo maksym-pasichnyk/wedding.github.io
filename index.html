@@ -36,7 +36,6 @@
       width: 120%;
       margin-bottom: -20%;
       transform: scaleY(-1);
-      background-image: url();
     }
     .calendar {
       display: grid;
@@ -46,7 +45,7 @@
       width: 400px;
       background-image: url(files/calendar.png);
       background-size: 25%;
-      border-radius: 15px;
+      border-radius: 1rem;
     }
     .calendar-week {
       grid-column-start: auto;
@@ -94,6 +93,26 @@
     .rings {
       width: 400px;
       margin-top: 100px;
+    }
+    .submit-button {
+      background-color: rgba(244, 154, 154, 0.125);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: .5rem;
+      font-family: Slimamif;
+      font-size: 32px;
+      font-weight: bold;
+      justify-content: center;
+      transition: all 250ms;
+      overflow: hidden;
+    }
+    .submit-button:hover,
+    .submit-button:focus {
+      border-color: rgba(0, 0, 0, 0.15);
+      background-color: rgba(244, 154, 154, 0.25);
+    }
+    .submit-button:active {
+      border-color: rgba(0, 0, 0, 0.15);
+      background-color: rgba(244, 154, 154, 0.5);
     }
     @keyframes pulse {
         0% {
@@ -239,9 +258,11 @@
       <img src="files/Flowers.png" style="width: 200px;">
       <p class="content-text">Якщо у Вас виникнуть питання,<br>Ви можете з нами зв'язатися.</p>
       <div style="font-family: LianaRegular; font-size: 62px;">Олександр</div>
-      <form action="tel:+380960019829">
-        <input type="submit" class="content-text" style="margin: 5% 0; padding: 10px 20px; width: fit-content; align-self: center;" value="+380 (96) 001 98 29">
-      </form>
+      <div style="margin: 5%; display: flex; width: fit-content; align-self: center; background-image: url(files/calendar.png); border: inset 1px transparent black; border-radius: 0.5rem;">
+        <form action="tel:+380960019829">
+          <button type="submit" class="submit-button" style="padding: 10px 20px; width: fit-content;" value="+380 (96) 001 98 29">+380 (96) 001 98 29</button>
+        </form>
+      </div>
       <img class="separator" src="files/8.png">
       <div class="title-text">Анкета</div>
       <p class="content-text">Просимо Вас заповнити анкету<br>до 21 червня 2024 р.</p>
@@ -258,7 +279,9 @@
             <input type="radio" id="choise.no" style="transform: scale(1.5); margin-right: 15px;" name="entry.1495708168" value="Ні" placeholder="Плануєте відвідати весілля?" />
             <label for="choise.no" class="content-text">На жаль, я не зможу</label>
           </div>
-          <input type="submit" class="content-text" style="margin: 5%; padding: 10px 20px; width: fit-content; align-self: center;" value="Відправити">
+          <div style="margin: 5%; display: flex; width: fit-content; align-self: center; background-image: url(files/calendar.png); border: inset 1px transparent black; border-radius: 0.5rem;">
+            <button type="submit" class="submit-button" style="padding: 10px 20px; width: fit-content;">Відправити</button>
+          </div>
         </div>
       </form>
       <img class="separator" src="files/8.png">
