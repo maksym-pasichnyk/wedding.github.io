@@ -3,16 +3,12 @@
 <html>
   <style>
     @font-face {
-      font-family: 'Cormorant';
-      src: url("fonts/cormorantsc/Cormorant-Regular.otf") format('truetype');
-    }
-    @font-face {
-      font-family: 'LeJourScript';
-      src: url("fonts/Le Jour Script.ttf") format('truetype');
-    }
-    @font-face {
       font-family: 'LianaRegular';
       src: url("fonts/Liana Regular.ttf") format('truetype');
+    }
+    @font-face {
+      font-family: 'Slimamif';
+      src: url("fonts/Slimamif.ttf") format('truetype');
     }
     html {
       margin: 0;
@@ -24,7 +20,7 @@
       text-align: center;
       background-image: url(files/paper.png);
       overflow: hidden;
-      font-family: Cormorant;
+      font-family: Slimamif;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -87,14 +83,24 @@
       color: #c83d54;
     }
     .content-text {
-      /* font-family: LianaRegular; */
-      font-family: Cormorant;
+      font-family: Slimamif;
       font-size: 40px;
     }
     .rings {
       width: 50%;
       margin-top: 10%;
       margin-bottom: 10%;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        60% {
+            transform: scale(1.25);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
   </style>
   <script>
@@ -153,7 +159,10 @@
         <div class="calendar-date">18</div>
         <div class="calendar-date">19</div>
         <div class="calendar-date">20</div>
-        <div class="calendar-date">21</div>
+        <div class="calendar-date" style="display: flex; justify-content: center; align-items: center;">
+          <span>21</span>
+          <img src="files/heart.png" style="width: 2em; position: absolute; animation: pulse 2s infinite;">
+        </div>
         <div class="calendar-date">22</div>
         <div class="calendar-date">23</div>
         <div class="calendar-date">24</div>
